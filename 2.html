@@ -1,0 +1,73 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<div class="container">
+    <div class="item item--1">Header</div>
+    <div class="item item--2">small box 1</div>
+    <div class="item item--3">small box 2</div>
+    <div class="item item--4">small box 3</div>
+    <div class="item item--5">slide bar</div>
+    <div class="item item--6">main content</div>
+    <div class="item item--7">footer</div>
+</div>
+
+<style>
+    .container{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: 50% 2fr 1fr;
+
+        grid-gap: 10px;
+
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+
+
+        width: 1000px;
+        margin: 30px auto;
+        background-color: #eee;
+    }
+    .item--1{
+        background-color: red;
+        grid-row: 1/2;
+        grid-column:1/ 5;
+    }
+    .item--2{
+        background-color: red;
+        grid-row: 2/6;
+        grid-column:1/ 2;
+    }
+    .item--3{
+        background-color: red;
+        grid-row: 2/6;
+        grid-column:2/3;
+    }
+    .item--4{
+        background-color: red;
+        grid-row: 2/6;
+        grid-column:3/ 4;
+    }
+    .item--5{
+        background-color: red;
+        grid-row: 2/14;
+        grid-column:4/ 5;
+    }
+    .item--6{
+        background-color: red;
+        grid-row: 6/14;
+        grid-column:1/ 4;
+    }
+    .item--7{
+        background-color:red;
+        grid-row: 14/16;
+        grid-column:1/ 5;
+    }
+
+
+
+  
+</style>
+</body>
+</html>
